@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dagens Skjorta</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <style>
+      html, body {
+        margin: 0;
+      }
+
+      body {
+        background-image: url("images/shirt.JPG");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        user-select: none;
+      }
+
+      .timer {
+        margin-top: 5px;
+        color: white;
+        text-align: center;
+        font-size: 46px;
+        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+        font-family: 'Fira Sans', sans-serif;
+      }
+
+      .time {
+        display: inline-block;
+        width: 1em;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <script src="index.js"></script>
+
+    <img id="who" />
+    <div class="timer">
+      <span class="time" id="timer-hours"></span>
+      <span>:</span>
+      <span class="time" id="timer-minutes"></span>
+      <span>:</span>
+      <span class="time" id="timer-seconds"></span>
+    </div>
+  </body>
+</html>
