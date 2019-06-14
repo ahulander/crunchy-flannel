@@ -49,7 +49,6 @@ function tickTimer(timer, who) {
   timer.seconds.textContent = prependZero(timeRemaining.seconds);
 
   var people = [
-    'Alex',
     'Jonas',
   ];
   var shirtPerson = people[calculateWhosTurnItIs(tomorrow, people.length)];
